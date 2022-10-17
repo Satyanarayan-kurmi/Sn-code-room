@@ -1,5 +1,6 @@
+
 .homePageWrapper {
-  background: #1c2c49;
+  background: #0d1422;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,7 +9,7 @@
 }
 
 .formWrapper {
-  background: #213a50;
+  background: #172a3a;
   padding: 20px;
   border-radius: 10px;
   width: 400px;
@@ -21,7 +22,8 @@ footer {
 }
 
 footer a {
-  color: #4aee88;
+  font-size: 20px;
+  color: #d2ed76;
 }
 
 .inputGroup {
@@ -35,8 +37,8 @@ footer a {
 }
 
 .homePageLogo {
-  height: 80px;
-  margin-bottom: 30px;
+  height: 95px;
+  margin-bottom: 15px;
 }
 
 .inputBox {
@@ -51,6 +53,7 @@ footer a {
 }
 
 .btn {
+  background: #87ff5e ;
   border: none;
   padding: 10px;
   border-radius: 5px;
@@ -62,7 +65,7 @@ footer a {
 
 .joinBtn,
 .leaveBtn {
-  background: #4aed88;
+  background: #4194d6;
   width: 100px;
   margin: auto;
 }
@@ -78,9 +81,9 @@ footer a {
 }
 
 .createNewBtn {
-  color: #4aed88;
+  color: #d2ed76;
   text-decoration: none;
-  border-bottom: 1px solid #4aed88;
+  border-bottom: 1px solid #d2ed76;
   transition: all 0.3s ease-in-out;
 }
 
@@ -96,8 +99,7 @@ footer a:hover {
 }
 
 .aside {
-  /* height: 95vh; */
-  background: #212d56;
+  background: #191941;
   padding: 16px;
   color: #fff;
   display: flex;
@@ -133,13 +135,52 @@ footer a:hover {
   height: 60px;
 }
 
-.leaveBtn {
+.leaveBtn,.copyBtn {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .CodeMirror {
   min-height: calc(100vh - 20px);
   font-size: 20px;
   line-height: 1.6;
   padding-top: 20px;
+}
+.divbtn2{
+  background: #191941;
+}
+@media only screen and (max-width: 780px){
+  .mainWrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .aside {
+    background: #191941;
+    padding: 16px;
+    color: #fff;
+    display: flex;
+  }
+  .asideInner {
+    display: flex;
+  }
+  .logo{
+    margin-right: 20px;
+  }
+  .h3connected{
+    display: none;
+  }
+  .divbtn{
+    display: none;
+  }
+  .leaveBtn,.copyBtn {
+    width: auto;
+    margin-left: 20%;
+  }
+  
+}
+
+
+@media only screen and (min-width: 780px){
+  .divbtn2{
+    display: none;
+  }
 }

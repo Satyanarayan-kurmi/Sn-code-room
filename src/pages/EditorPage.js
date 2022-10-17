@@ -103,7 +103,7 @@ const EditorPage = () => {
                             alt="logo"
                         />
                     </div>
-                    <h3>Connected</h3>
+                    <h3 className='h3connected'>Connected</h3>
                     <div className="clientsList">
                         {clients.map((client) => (
                             <Client
@@ -113,16 +113,18 @@ const EditorPage = () => {
                         ))}
                     </div>
                 </div>
-                <button className="btn copyBtn" 
-                onClick={copyRoomId}
-                >
-                    Copy ROOM ID
-                </button>
-                <button className="btn leaveBtn" 
-                onClick={leaveRoom}
-                >
-                    Leave
-                </button>
+                <div className='divbtn'>
+                    <button className="btn copyBtn" 
+                    onClick={copyRoomId}
+                    >
+                        Copy ROOM ID
+                    </button>
+                    <button className="btn leaveBtn" 
+                    onClick={leaveRoom}
+                    >
+                        Leave
+                    </button>
+                </div>
             </div>
             <div className="editorWrap">
                 <Editor
@@ -133,6 +135,18 @@ const EditorPage = () => {
                     }}
                 />
             </div>
+                <div className='divbtn2'>
+                    <button className="btn copyBtn" 
+                    onClick={copyRoomId}
+                    >
+                        Copy ROOM ID
+                    </button>
+                    <button className="btn leaveBtn" 
+                    onClick={leaveRoom}
+                    >
+                        Leave
+                    </button>
+                </div>
         </div>
     );
 };
